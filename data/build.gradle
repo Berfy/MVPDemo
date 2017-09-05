@@ -1,0 +1,110 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.neenbedankt.android-apt'
+apply plugin: 'com.fernandocejas.frodo'
+apply plugin: 'me.tatarka.retrolambda'
+
+def config = rootProject.ext
+
+android {
+    //defaultPublishConfig "debug"
+    publishNonDefault true
+
+    compileSdkVersion config.compileSdkVersion
+    buildToolsVersion config.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion config.minSdkVersion
+        targetSdkVersion config.targetSdkVersion
+        versionCode config.versionCode
+        buildConfigField "String", "appId", '"2"'     //appID
+    }
+
+    buildTypes {
+        debug {//纯测试服务器
+            buildConfigField "String", "apiHost", '"https://test.wolaibao.com/wlb_svr/" '
+            buildConfigField "String", "h5Host", '"https://test.wolaibao.com/wlb_official/h5/apptest/" '
+//            buildConfigField "String", "h5Host", '"file:///android_asset/wlb3.0/" '
+            buildConfigField "String", "companyIconHost", '"https://test.wolaibao.com/wlb_official/static/img/companyIcon/" '
+            buildConfigField "String", "h5SharePage", '"http://test.wolaibao.com/wlb_official/h5/apptest/" '
+
+
+            //测试环境正式网
+//            buildConfigField "String", "apiHost", '"https://bizapi.wolaibao.com/" '
+//            buildConfigField "String", "h5Host", '"https://www.wolaibao.com/h5test/app/" '
+////            buildConfigField "String", "h5Host", '"file:///android_asset/wlb3.0/" '
+//            buildConfigField "String", "companyIconHost", '"https://www.wolaibao.com/static/img/companyIcon/" '
+//            buildConfigField "String", "h5SharePage", '"http://test.wolaibao.com/wlb_official/h5/apptest/" '
+        }
+        release {
+            //正式网
+//            buildConfigField "String", "apiHost", '"https://bizapi.wolaibao.com/" '
+//            buildConfigField "String", "h5Host", '"https://www.wolaibao.com/h5/app/" '
+//            buildConfigField "String", "companyIconHost", '"https://www.wolaibao.com/static/img/companyIcon/" '
+//            buildConfigField "String", "h5SharePage", '"https://www.wolaibao.com/h5/app/"'
+// 正式网测试环境
+
+            buildConfigField "String", "apiHost", '"https://bizapi.wolaibao.com/" '
+//            buildConfigField "String", "h5Host", '"file:///android_asset/wlb3.0/" '
+            buildConfigField "String", "h5Host", '"https://www.wolaibao.com/h5test/app/" '
+            buildConfigField "String", "companyIconHost", '"https://www.wolaibao.com/static/img/companyIcon/" '
+            buildConfigField "String", "h5SharePage", '"http://test.wolaibao.com/wlb_official/h5/app/"'
+            consumerProguardFiles 'data-rules.pro' // 自定义混淆配置
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility config.javaVersion
+        targetCompatibility config.javaVersion
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+        exclude 'LICENSE.txt'
+    }
+    lintOptions {
+        quiet true
+        abortOnError false
+        ignoreWarnings true
+        disable 'InvalidPackage'            //Some libraries have issues with this.
+        disable 'OldTargetApi'
+        //Lint gives this warning but SDK 20 would be Android L Beta.
+        disable 'IconDensities'             //For testing purpose. This is safe to remove.
+        disable 'IconMissingDensityFolder'  //For testing purpose. This is safe to remove.
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //    compile project(':wlb_common')
+    compile project(':librarys:share_sdk')
+    compile project(':librarys:network')
+    compile project(':librarys:AppUpdate')
+    compile project(':librarys:CommonUtil')
+    provided config.javaxAnnotation
+    compile config.javaxInject
+    compile config.androidAnnotations
+    compile config.gson
+    compile config.okHttp
+    compile config.rxJava
+    compile config.rxAndroid
+    compile config.retrofit2
+    compile config.retrofit2AdapterRxjava
+    compile config.retrofit2ConvertGson
+    compile config.loggingInterceptor
+
+    //test
+    testCompile config.junit
+    testCompile config.assertj
+    testCompile config.mockito
+    testCompile config.robolectric
+
+}

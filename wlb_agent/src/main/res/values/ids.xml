@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="obj_tag" type="id" />
+
+    <!-- usercenter -->
+    <item name="user_businessCard" type="id" />
+    <item name="user_qr" type="id" />
+    <item name="user_attestation" type="id" />
+    <item name="user_task" type="id" />
+    <item name="user_combo" type="id" />
+    <item name="user_cupon" type="id" />
+    <item name="user_setting" type="id" />
+    <item name="user_order" type="id" />
+    <item name="user_service_phone" type="id" />
+
+    <!-- setting -->
+    <item name="setting_modify_pwd" type="id" />
+    <item name="setting_about" type="id" />
+    <item name="setting_feedback" type="id" />
+
+
+</resources>

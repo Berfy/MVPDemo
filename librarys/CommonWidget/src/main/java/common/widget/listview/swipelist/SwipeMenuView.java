@@ -1,0 +1,129 @@
+package common.widget.listview.swipelist;
+
+import android.annotation.SuppressLint;
+import android.content.Context;
+import android.text.TextUtils;
+import android.util.AttributeSet;
+import android.view.Gravity;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+import java.util.List;
+
+/**
+ * 
+ * @author baoyz
+ * @date 2014-8-23
+ * 
+ */
+@SuppressLint("NewApi")
+public class SwipeMenuView extends LinearLayout implements OnClickListener {
+
+	private SwipeMenuLayout mLayout;
+	private SwipeMenu mMenu;
+	private OnSwipeItemClickListener onItemClickListener;
+	private int position;
+
+	public int getPosition() {
+		return position;
+	}
+
+	public void setPosition(int position) {
+		this.position = position;
+	}
+
+	public SwipeMenuView(Context context, AttributeSet attrs, int defStyle) {
+		super(context, attrs, defStyle);
+	}
+
+	public SwipeMenuView(Context context, AttributeSet attrs) {
+		super(context, attrs);
+	}
+
+	public SwipeMenuView(Context context) {
+		super(context);
+	}
+
+	public SwipeMenuView(SwipeMenu menu, SwipeMenuListView listView) {
+		super(menu.getContext());
+		mMenu = menu;
+		List<SwipeMenuItem> items = menu.getMenuItems();
+		int id = 0;
+		for (SwipeMenuItem item : items) {
+			addItem(item, id++);
+		}
+	}
+
+	@SuppressWarnings("deprecation")
+	private void addItem(SwipeMenuItem item, int id) {
+		LayoutParams params = new LayoutParams(item.getWidth(),
+				item.getHeight() == -1 ? LayoutParams.MATCH_PARENT : item.getHeight());
+		if (item.getMarginLeft() > 0) {
+			params.leftMargin = item.getMarginLeft();
+		}
+		if(item.getMarginRight()>0){
+			params.rightMargin=item.getMarginRight();
+		}
+		if(item.getBackgroundW()>0){
+			params.width=item.getBackgroundW();
+		}
+		LinearLayout parent = new LinearLayout(getContext());
+		parent.setId(id);
+		parent.setGravity(Gravity.CENTER);
+		parent.setOrientation(LinearLayout.VERTICAL);
+		parent.setLayoutParams(params);
+		parent.setBackgroundDrawable(item.getBackground());
+		parent.setOnClickListener(this);
+		addView(parent);
+		setGravity(item.getGravity() != -1 ? item.getGravity() : Gravity.CENTER);
+
+		if (item.getIcon() != null) {
+			parent.addView(createIcon(item));
+		}
+		if (!TextUtils.isEmpty(item.getTitle())) {
+			parent.addView(createTitle(item));
+		}
+
+	}
+
+	private ImageView createIcon(SwipeMenuItem item) {
+		ImageView iv = new ImageView(getContext());
+		iv.setImageDrawable(item.getIcon());
+		return iv;
+	}
+
+	private TextView createTitle(SwipeMenuItem item) {
+		TextView tv = new TextView(getContext());
+		tv.setText(item.getTitle());
+		tv.setGravity(Gravity.CENTER);
+		tv.setTextSize(item.getTitleSize());
+		tv.setTextColor(item.getTitleColor());
+		return tv;
+	}
+
+	@Override
+	public void onClick(View v) {
+		if (onItemClickListener != null && mLayout.isOpen()) {
+			onItemClickListener.onItemClick(this, mMenu, v.getId());
+		}
+	}
+
+	public OnSwipeItemClickListener getOnSwipeItemClickListener() {
+		return onItemClickListener;
+	}
+
+	public void setOnSwipeItemClickListener(OnSwipeItemClickListener onItemClickListener) {
+		this.onItemClickListener = onItemClickListener;
+	}
+
+	public void setLayout(SwipeMenuLayout mLayout) {
+		this.mLayout = mLayout;
+	}
+
+	public static interface OnSwipeItemClickListener {
+		void onItemClick(SwipeMenuView view, SwipeMenu menu, int index);
+	}
+}

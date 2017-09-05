@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="15dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="20dp"
+    android:paddingTop="15dp">
+
+
+    <ImageView
+        android:id="@+id/item_readTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/msg_unread_tag" />
+
+
+    <TextView
+        android:id="@+id/item_unread_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:text="[未读]"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/c_fc584b"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/item_unread_txt"
+        android:layout_toRightOf="@id/item_readTag"
+        android:text="标题"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/item_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/item_title"
+        android:layout_below="@id/item_title"
+        android:layout_marginTop="6dp"
+        android:text="xiangq gal;jfa地方啦放假啊上了飞机啊是浪费发的时间放假撒"
+        android:textColor="@color/c_7a7a7a"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/item_summary"
+        android:layout_below="@id/item_summary"
+        android:layout_marginTop="6dp"
+        android:text="2016-01-02"
+        android:textColor="@color/c_b2b2b2"
+        android:textSize="10sp" />
+
+</RelativeLayout>

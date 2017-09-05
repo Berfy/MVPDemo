@@ -1,0 +1,5 @@
+<resources>
+
+    <string name="app_name">app_update</string>
+    <string name="fileprovider_authority">com.wlb.agent.fileprovider</string>
+</resources>

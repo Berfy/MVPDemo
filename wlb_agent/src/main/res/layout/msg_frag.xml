@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/msgtype_banner"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/c_e44433"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/msg_priviate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="@dimen/sp_14"
+            android:gravity="center"
+            android:text="消息"
+            android:textColor="@color/msg_tabtxt_color" />
+        <TextView
+            android:id="@+id/msg_public"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="@dimen/sp_14"
+            android:text="公告"
+            android:textColor="@color/msg_tabtxt_color" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/tab_indictor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/msgtype_banner"
+        android:src="@drawable/tab_indictor" />
+
+    <common.widget.viewpager.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/msgtype_banner"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+</RelativeLayout>

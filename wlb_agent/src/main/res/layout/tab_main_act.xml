@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/tab_bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/layout_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <View
+                android:id="@+id/v_home"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="@drawable/btn_tab_home_selector" />
+
+            <TextView
+                android:id="@+id/tv_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_2"
+                android:text="@string/tab_homepage"
+                android:textColor="@color/main_tabtxt_color"
+                android:textSize="@dimen/sp_11" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_faxian"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/v_faxian"
+                android:layout_width="@dimen/dp_15"
+                android:layout_height="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="@drawable/btn_tab_faxian_selector"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/tv_faxian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_2"
+                android:gravity="center"
+                android:text="@string/tab_faxian"
+                android:textColor="@color/main_tabtxt_color"
+                android:textSize="@dimen/sp_11" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_mine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/v_mine"
+                android:layout_width="@dimen/dp_15"
+                android:layout_height="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="@drawable/btn_tab_mine_selector"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/tv_mine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_2"
+                android:gravity="center"
+                android:text="@string/user_name"
+                android:textColor="@color/main_tabtxt_color"
+                android:textSize="@dimen/sp_11" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <common.widget.viewpager.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tab_bottombar"
+        android:overScrollMode="never" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@id/tab_bottombar"
+        android:background="@color/insuranceservice_divider_line" />
+
+</RelativeLayout>

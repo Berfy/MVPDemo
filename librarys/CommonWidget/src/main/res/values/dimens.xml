@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- dialog -->
+    <dimen name="dialog_paddingLeft">20sp</dimen>
+    <dimen name="dialog_paddingTop">40sp</dimen>
+    
+    <!-- LoadingBar -->
+    <dimen name="loadingbar_progress_size">50sp</dimen>
+    <dimen name="loadingbar_textsize">14sp</dimen>
+
+</resources>

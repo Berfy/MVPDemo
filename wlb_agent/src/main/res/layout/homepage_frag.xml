@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/keyBoard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <common.widget.webview.AutoWebView
+            android:id="@+id/auto_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></common.widget.webview.AutoWebView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/home_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.wlb.common.ui.StatusMarginBar
+            android:id="@+id/layout_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"></com.wlb.common.ui.StatusMarginBar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:background="@color/translate"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/layout_left"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                android:gravity="center|left">
+
+                <common.widget.scaleable.ScaleableImageView
+                    android:id="@+id/title_left_button"
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:background="@drawable/ic_user_msg"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    ripple:scaleRatio="1.5" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="@dimen/dp_18"
+                android:layout_centerInParent="true"
+                android:background="@drawable/wlb_icon_white" />
+
+            <common.widget.scaleable.ScaleableImageView
+                android:id="@+id/title_right_button"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_15"
+                android:background="@drawable/phone_white"
+                android:padding="5dp"
+                ripple:scaleRatio="1.5" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <common.widget.LoadingBar
+        android:id="@+id/loadingBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/home_title_layout"
+        android:visibility="gone" />
+</RelativeLayout>

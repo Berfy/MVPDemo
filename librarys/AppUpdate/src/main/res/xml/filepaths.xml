@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding= "utf-8"?>
+<resources>
+    <paths>
+        <files-path name="update.apk" path="files/" />
+        <external-path name="takephoto" path="Android/" />
+        <files-path name="h5" path="wlb" />
+        <files-path name="h5" path="wlb/zip" />
+    </paths>
+</resources>

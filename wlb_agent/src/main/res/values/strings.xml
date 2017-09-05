@@ -1,0 +1,604 @@
+<resources>
+
+    <string name="app_name">我来保</string>
+    <string name="app_name_test">我来保测试版</string>
+    <!-- common -->
+    <string name="net_noconnection">当前网络不可用</string>
+    <string name="img_desc">img_desc</string>
+    <string name="req_fail">网络请求失败</string>
+    <string name="take_photo">拍照</string>
+    <string name="pick_photo">相册</string>
+    <string name="permission_failed">没有获取到权限，请到应用管理-我来保-权限-允许全部权限</string>
+
+    <!-- 用户 -->
+    <string name="login_successful">登录成功</string>
+    <string name="regist">注册</string>
+    <string name="user_name">我的</string>
+    <string name="hotline_tip">您确定要拨打客服电话吗?</string>
+    <string name="submit">提交</string>
+    <string name="finish">完成</string>
+    <string name="login_out">退出登录</string>
+    <string name="usercenter_userinfo">我的资料</string>
+    <string name="usercenter_cars">车辆管理</string>
+    <string name="usercenter_wallet">我的钱包</string>
+    <string name="about_as_text">我来保专注服务于保险代理人及消费者，为保险代理人提供互联网车险服务，并具备互联网保险产品研发、销售、运营能力的综合互联网金融服务平台"</string>
+    <string name="prove_name">实名认证</string>
+    <string name="pass_tip">请输入6-16位大小写字母，数字</string>
+    <string name="tip_logout">您确定要退出登录吗？</string>
+    <string name="sure">确定</string>
+    <string name="cancel">取消</string>
+
+    <!--找回密码-->
+    <string name="find_pwd">找回密码</string>
+    <string name="find_pwd_hint_pwd">设置登录密码</string>
+    <string name="find_pwd_hint_pwd1">设置登录密码 (至少6~16位数字字母组合)</string>
+    <string name="find_pwd_hint_confirm_pwd">确认密码</string>
+
+    <!--设置密码-->
+    <string name="tip_pwd_not_same">两次输入密码不一致</string>
+
+    <!--登录-->
+    <string name="login">登录</string>
+    <string name="tip_verify_code_error">验证码不正确</string>
+    <string name="login_code">快捷登录</string>
+    <string name="login_pwd">密码登录</string>
+    <string name="login_hint_mobile">手机号码</string>
+    <string name="mobile_null_tip">手机号码不能为空</string>
+    <string name="get_code">获取验证码</string>
+    <string name="get_code_sendding">验证码已发出</string>
+    <string name="login_hint_pwd">密码</string>
+    <string name="login_hint_image_code">图文验证码</string>
+    <string name="login_hint_code">验证码</string>
+    <string name="login_go">立即登录</string>
+    <string name="login_no_account">还没账号?</string>
+    <string name="login_tip_code">验证码不正确</string>
+    <string name="login_tip_code_null">验证码不能为空</string>
+    <string name="login_tip_imgcode">图文验证码不正确</string>
+    <string name="login_tip_imgcode_null">图文验证码不能为空</string>
+    <string name="regist_go">立即注册</string>
+    <string name="getting_code">正在获取验证码</string>
+    <string name="tip_pwd_null">密码不能为空</string>
+    <string name="tip_confirm_pwd_null">确认密码不能为空</string>
+    <string name="tip_code_null">验证码不能为空</string>
+    <string name="go">马上体验</string>
+
+    <!--注册-->
+    <string name="regist_agree">同意</string>
+    <string name="regist_web">《用户注册协议》</string>
+    <string name="regist_web_title">用户注册协议</string>
+    <string name="regist_has_account">已有账号?</string>
+    <string name="regist_go_login">去登录</string>
+    <string name="regist_suc">注册成功</string>
+    <string name="regist_reg_check">请阅读并勾选用户注册协议</string>
+
+    <!--第三方登录-->
+    <string name="other_login_bind_error">绑定失败</string>
+    <string name="other_login_cancel">用户取消操作</string>
+    <string name="other_login_tip">社交账户直接登录</string>
+    <string name="other_login_wx">微信</string>
+    <string name="other_login_qq">QQ</string>
+    <string name="other_login_weibo">微博</string>
+
+    <!-- 主页 -->
+    <string name="tab_homepage">首页</string>
+    <string name="tab_faxian">发现</string>
+    <string name="tab_news">知识库</string>
+    <string name="tab_friend">保友圈</string>
+    <string name="home_car_go_title">报价下单</string>
+    <string name="home_car_city">投保城市</string>
+    <string name="home_car_num">车牌号码</string>
+    <string name="home_car_name">车主姓名</string>
+    <string name="home_go">立即报价</string>
+    <string name="home_add_user">添加客户</string>
+    <string name="home_hint_car_num">请输入车牌号</string>
+    <string name="home_hint_car_people">请输入车主姓名</string>
+    <string name="home_add_group_user">团队增员</string>
+    <string name="home_gps">定位中</string>
+    <string name="home_choose_city">选择城市</string>
+    <string name="home_city_search_hint">输入城市名称</string>
+    <string name="home_city_search_title_gps">定位</string>
+    <string name="home_city_search_title_hot_city">热门</string>
+
+    <!--确认车辆信息-->
+    <string name="confirm_car_info">确认车辆信息</string>
+    <string name="confirm_car_info_top_tip">点击拍摄行驶证主页，将自动识别行驶证信息，方便您快速报价</string>
+    <string name="confirm_car_info_camera_auto_ocr">拍照自动识别</string>
+    <string name="confirm_car_info_driving_license_info">车辆行驶证信息</string>
+    <string name="confirm_car_info_input_help">填写指南</string>
+    <string name="confirm_car_info_people">所有人</string>
+    <string name="confirm_car_info_carnum">车牌号</string>
+    <string name="confirm_car_info_vin">车辆识别代码</string>
+    <string name="confirm_car_info_engine_number">发动机号码</string>
+    <string name="confirm_car_info_bland_title">选择品牌型号</string>
+    <string name="confirm_car_info_bland">品牌型号</string>
+    <string name="confirm_car_info_reg_date">注册日期</string>
+    <string name="confirm_car_info_hot_line_title">客服热线:</string>
+    <string name="confirm_car_info_car_bland_tip1">根据车辆识别码</string>
+    <string name="car_create_date">车辆登记日期</string>
+    <string name="confirm_car_info_car_bland_tip2">查询车型</string>
+    <string name="confirm_car_info_car_bland_error_tip1">以上车型不对，</string>
+    <string name="confirm_car_info_car_bland_error_tip2">请联系客服</string>
+    <string name="confirm_car_info_sure">确认</string>
+
+    <!--选择保险公司-->
+    <string name="choose_insurer">选择保险公司</string>
+    <string name="choose_insurer_carinfo">车辆信息</string>
+    <string name="choose_insurer_last_year_cost_num">上一年出险次数</string>
+    <string name="choose_insurer_last_year_cost_price">上一年出险现金</string>
+    <string name="choose_insurer_jqx_last_date">交强险到期日</string>
+    <string name="choose_insurer_syx_last_date">商业险到期日</string>
+    <string name="choose_insurer_last_year_buy_price">上一年购买保费</string>
+    <string name="choose_insurer_syx_title">商业:</string>
+    <string name="choose_insurer_jqx_title">交强险:</string>
+    <string name="text_null">--</string>
+    <string name="next_step">下一步</string>
+
+    <!--选择险种-->
+    <string name="choose_insurer_coverage">选择险种</string>
+    <string name="choose_insurer_coverage_jqx_date">交强险生效时间</string>
+    <string name="choose_insurer_coverage_syx_date">商业险生效时间</string>
+    <string name="modify">修改</string>
+    <string name="choose_insurer_coverage_last_buy_price">按上年险种报价</string>
+    <string name="choose_insurer_coverage_help">险种攻略</string>
+    <string name="choose_insurer_coverage_choosed">已选择险种</string>
+    <string name="choose_insurer_coverage_null">不投保</string>
+    <string name="unit_wan">万</string>
+    <string name="type">种</string>
+    <string name="choose_insurer_coverage_buy">去报价</string>
+
+    <!--报价-->
+    <string name="offer">报价</string>
+    <string name="offer_clentname">客户姓名:</string>
+    <string name="offer_clentmobile">联系电话:</string>
+    <string name="offer_clent_type">设置分类</string>
+    <string name="offer_call_client">拨打电话</string>
+    <string name="offer_client_tip">该车辆还保存在您的其他几位客户的车辆列表内</string>
+    <string name="offer_click_detail">点击查看</string>
+    <string name="offer_renmin">中国人民保险</string>
+    <string name="offer_taipingyang">太平洋保险</string>
+    <string name="offer_pingan">中国平安保险</string>
+    <string name="offer_detal">查看报价明细</string>
+    <string name="unit_rmb">¥</string>
+    <string name="offer_buy">购买</string>
+    <string name="offer_choose_retry">重新选择险种</string>
+    <string name="offer_old_price">原价:</string>
+    <string name="offer_cur_price">现价:</string>
+    <string name="zhekoulv_title">折扣率:</string>
+    <string name="offer_syx_total">商业险合计</string>
+    <string name="offer_zhekou_total_price">折后价格:</string>
+
+    <!--报价分享-->
+    <string name="offer_share">报价分享</string>
+    <string name="share">分享</string>
+    <string name="offer_share_go_tip">没有要分享的报价</string>
+    <string name="offer_share_tip">没有选择要分享的报价</string>
+    <string name="offer_share_tip_sms">因短信字数限制，只能选择一条报价，您可以多次发送!</string>
+    <string name="offer_share_tip1">请先设置您要分享的保险公司、折扣</string>
+    <string name="offer_share_example_hint">例如80</string>
+    <string name="offer_share_total_price">折后保费总额:</string>
+    <string name="offer_share_tuiguangfei_price">保额差额:</string>
+    <string name="offer_share_tip2">请放心!\n我们只将保险公司名称及折后保费分享给您的客户</string>
+    <string name="offer_share_wx">分享至微信</string>
+    <string name="offer_share_qq">分享至QQ</string>
+    <string name="offer_share_sms">分享至短信</string>
+    <string name="offer_zhekou_max_tip">折扣率不能超过100%</string>
+
+    <!--核保-->
+    <string name="underwrite_info">填写核保信息</string>
+    <string name="underwrite_tip1">投保人、被保险人、车主是同一人</string>
+    <string name="underwrite_tip2">投保人、被保险人是同一人</string>
+    <string name="underwrite_beibaoren_idcard_info">被保人证件信息</string>
+    <string name="underwrite_idcard_ocr">拍照自动识别</string>
+    <string name="underwrite_name">姓名</string>
+    <string name="underwrite_name_hint">请填写身份证上的姓名信息</string>
+    <string name="underwrite_sex">性别</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="underwrite_birthday">出生</string>
+    <string name="underwrite_birthday_hint">请填写身份证上的出生日期</string>
+    <string name="underwrite_address">住址</string>
+    <string name="underwrite_address_hint">请填写身份证上的住址信息</string>
+    <string name="underwrite_idcard">身份证号</string>
+    <string name="underwrite_idcard_hint">请填写身份证上的公民身份证号</string>
+    <string name="underwrite_val_date">身份证有效期限</string>
+    <string name="underwrite_val_date_start">起始日期</string>
+    <string name="underwrite_val_date_end">截止日期</string>
+    <string name="underwrite_get_address">签发机关</string>
+    <string name="underwrite_get_address_hint">请填写身份证背面签发机关信息</string>
+    <string name="underwrite_beibaoren_info">被保人信息</string>
+    <string name="underwrite_beibaoren_name_hint">请输入被保人姓名</string>
+    <string name="underwrite_mobile">手机号码</string>
+    <string name="underwrite_beibaoren_idcard_hint">请输入被保人身份证号</string>
+    <string name="underwrite_beibaoren_mobile_hint">请输入被保人手机号码</string>
+    <string name="underwrite_toubaoren_info">投保人信息</string>
+    <string name="underwrite_toubaoren_name_hint">请输入投保人姓名</string>
+    <string name="underwrite_toubaoren_idcard_hint">请输入投保人身份证号</string>
+    <string name="underwrite_toubaoren_mobile_hint">请输入投保人手机号码</string>
+    <string name="underwrite_carpeople_info">车主信息</string>
+    <string name="underwrite_carpeople_name_hint">请输入车主姓名</string>
+    <string name="underwrite_carpeople_idcard_hint">请输入车主身份证号</string>
+    <string name="underwrite_carpeople_mobile_hint">请输入车主手机号码</string>
+    <string name="underwrite_choose_warranty_type">选择保单类型</string>
+    <string name="underwrite_post_digital">电子保单</string>
+    <string name="underwrite_post_paper">纸质保单</string>
+    <string name="underwrite_warranty_post">保单配送</string>
+    <string name="underwrite_email">邮箱</string>
+    <string name="underwrite_email_hint">请输入收单人邮箱</string>
+    <string name="underwrite_read_healp_tip">我已阅读并同意</string>
+    <string name="underwrite_help">《保险经纪委托协议》</string>
+    <string name="underwrite_help_title">保险经纪委托协议</string>
+    <string name="underwrite_submit">提交核保信息</string>
+
+    <!--提交核保-->
+    <string name="underwrite_submit_suc">提交成功</string>
+    <string name="order_submit_suc">订单提交成功</string>
+
+    <!--订单-->
+    <string name="order">我的订单</string>
+    <string name="order_search">订单搜索</string>
+    <string name="order_list">订单列表</string>
+    <string name="order_detail">订单详情</string>
+    <string name="order_number_title">订单号:</string>
+    <string name="order_price_total_title">保费总计:</string>
+    <string name="order_go_submit">去提交</string>
+    <string name="order_go_pay">去支付</string>
+    <string name="order_go_pay1">去付款</string>
+    <string name="order_go_upload">去上传</string>
+    <string name="order_go_underwrite">重新核保</string>
+    <string name="order_status1">核保中</string>
+    <string name="order_status2">待支付</string>
+    <string name="order_status3">出单中</string>
+    <string name="order_status4">已完成</string>
+    <string name="order_status5">全部</string>
+    <string name="order_status6">支付过期</string>
+    <string name="order_status0">核保失败</string>
+    <string name="order_remark">填写备注</string>
+    <string name="order_tip_null">哎呀~您还没有订单哦!</string>
+    <string name="order_null_go">去出单</string>
+    <string name="order_sendcode_tip">您还需获取并提交短信验证码才能完成您的订单</string>
+    <string name="order_order_status2_tip1">核保成功!请尽快完成支付。</string>
+    <string name="order_search_hint">按订单号、车牌号、手机号、车主姓名查询</string>
+    <string name="order_order_status0">订单核保失败</string>
+    <string name="order_order_status0_tip">保监会规定正式保单打印需上传身份证正反面清晰照片，请务必上传!</string>
+    <string name="order_order_status1">订单核保中</string>
+    <string name="order_order_status1_tip1">您的订单正在核保，过程大约5分钟，请稍等；如遇问题我们会主动与您联系，或拨打客服电话 </string>
+    <string name="order_order_status1_tip">请耐心等待，如遇问题客服人员会与您电话沟通。</string>
+    <string name="order_order_status2">订单核保成功</string>
+    <string name="order_order_status2_tip">恭喜您，您的订单核保成功!</string>
+    <string name="order_order_status3">订单支付成功</string>
+    <string name="order_order_status3_tip">您还需提交您所收到的短信验证码!</string>
+    <string name="order_order_status4">订单已完成</string>
+    <string name="order_order_status4_tip">您还可以在本页面为订单添加备注哦!</string>
+    <string name="order_order_status5">订单已取消</string>
+    <string name="order_detail_city_title">投保城市:</string>
+    <string name="order_detail_price_title">订单金额:</string>
+    <string name="order_detail_start_date">起保日期</string>
+    <string name="order_detail_car_info">车辆信息</string>
+    <string name="order_detail_chezhu_info">车主信息</string>
+    <string name="order_detail_toubaoren_info">投保人信息</string>
+    <string name="order_detail_beibaoren_info">被保人信息</string>
+    <string name="order_detail_youhuiquan">优惠券</string>
+    <string name="order_detail_youhui">优惠</string>
+    <string name="man">满</string>
+    <string name="jian">减</string>
+    <string name="unit_yuan">元</string>
+    <string name="order_detail_price_detail">报价明细</string>
+    <string name="order_detail_order_price_total">商品总额:</string>
+    <string name="order_detail_price_total">折后总额:</string>
+    <string name="order_detail_pay_price">实付金额:</string>
+    <string name="order_detail_remark">填写备注</string>
+    <string name="order_detail_remark_hint">请填写备注，字数不得超过60字</string>
+    <string name="order_detail_remark_null_tip">请填写备注</string>
+    <string name="order_detail_btn_finish">订单已完成，去抽奖吧</string>
+    <string name="order_detail_order">订单</string>
+    <string name="order_upload_photo_tip">调整拍摄角度，避免反光影响，确保图像清晰，可提高识别度</string>
+    <string name="order_upload_photo">上传照片</string>
+    <string name="order_upload_photo_idcard">身份证</string>
+    <string name="order_upload_photo_other">其他照片</string>
+    <string name="order_upload_photo_toubaoren_idcard">投保人身份证</string>
+    <string name="order_upload_photo_beibaoren_idcard">被保人身份证</string>
+    <string name="order_upload_photo_chezhu_idcard">车主身份证</string>
+    <string name="order_upload_photo_yanchen">验车照</string>
+    <string name="order_upload_photo_idcard_zhengmian">请上传身份证正面</string>
+    <string name="order_upload_photo_idcard_fanmian">请上传身份证背面</string>
+    <string name="order_haspay_submit_code">短信验证码提交</string>
+    <string name="order_haspay_submit_code_tip1">短信验证码已发送到您的手机</string>
+    <string name="order_haspay_submit_code_tip2">请保证您所填写的验证码正确，多次提交修改会导致您的订单被冻结</string>
+    <string name="order_haspay_submit_code_hint">请输入收到的验证码</string>
+    <string name="order_haspay_submit_code_tip3">收不到验证码，</string>
+    <string name="order_haspay_submit_code_tip4">更换手机号</string>
+    <string name="order_haspay_submit_code_tip5">试试?</string>
+    <string name="close">关闭</string>
+    <string name="order_haspay_submit_code_change_mobile">更换手机号重新获取短信验证码</string>
+    <string name="order_haspay_submit_code_change_mobile_hint">请填写您需要更换的手机号码</string>
+    <string name="order_haspay_submit_code_change_mobile_tip1">还是收不到？</string>
+    <string name="order_haspay_submit_code_change_mobile_tip2">请您</string>
+    <string name="order_haspay_submit_code_change_mobile_tip3">联系客服</string>
+
+    <!--支付-->
+    <string name="pay">支付</string>
+    <string name="pay_car_order">车险订单</string>
+    <string name="pay_total_price_title">应付总额:</string>
+    <string name="pay_choose">请选择支付方式</string>
+    <string name="pay_wxpay">微信支付</string>
+    <string name="pay_alipay">支付宝支付</string>
+    <string name="pay_yinlian">网上银行</string>
+    <string name="pay_other">他人支付</string>
+    <string name="pay_sure">确认支付</string>
+    <string name="pay_status_suc">支付成功</string>
+    <string name="pay_status_failed">支付失败</string>
+    <string name="pay_choose_other">选择其他方式支付</string>
+    <string name="pay_retry">重新支付</string>
+
+    <!-- 险种 -->
+    <string name="zhuxian">主险</string>
+    <string name="fujiaxian">附加险</string>
+    <string name="syx">商业险</string>
+    <string name="percent">%</string>
+    <string name="jqx">交强险</string>
+    <string name="ccs">车船税</string>
+    <string name="csx">机动车辆损失险</string>
+    <string name="csx_short">车损险</string>
+    <string name="bjmp">不计免赔</string>
+    <string name="csx_b">不计免赔(车损险)</string>
+    <string name="dszx">第三者责任险</string>
+    <string name="dszx_short">三者险</string>
+    <string name="dszx_b">不计免赔(三者险)</string>
+    <string name="dqx">盗抢险</string>
+    <string name="dqx_b">不计免赔(盗抢险)</string>
+    <string name="sjx">司机险</string>
+    <string name="sjx_b">不计免赔(司机险)</string>
+    <string name="ckx">乘客险</string>
+    <string name="ckx_b">不计免赔(司机险)</string>
+    <string name="blx">玻璃险</string>
+    <string name="blx_b">不计免赔(司机险)</string>
+    <string name="clwfzddsf">车辆损失无法找到第三放特约险</string>
+    <string name="hhx">划痕险</string>
+    <string name="hhx_b">不计免赔(划痕险)</string>
+    <string name="zrx">自燃险</string>
+    <string name="zrx_b">不计免赔(自燃险)</string>
+    <string name="ssx">涉水险</string>
+    <string name="ssx_b">不计免赔(涉水险)</string>
+    <string name="zdxlcx">指定修理厂险</string>
+    <string name="jsx">精神损害抚慰金责任险</string>
+
+    <!--发现-->
+    <string name="find">发现</string>
+    <string name="find_item_tuandui">团队管理</string>
+    <string name="find_item_kehu">客户管理</string>
+    <string name="find_item_jifen">赚积分</string>
+    <string name="find_item_choujiang">去抽奖</string>
+    <string name="find_title1">推荐</string>
+    <string name="find_title2">理念</string>
+    <string name="find_title3">展业</string>
+    <string name="find_title4">增员</string>
+    <string name="find_read">阅读</string>
+
+    <!--====================================================我的start=============================================-->
+    <string name="my_tuiguangfei">推广费</string>
+    <string name="my_unit_yuan">(元)</string>
+    <string name="my_will_can">待生效(元)</string>
+    <string name="my_withdrawal">可提现(元)</string>
+    <string name="my_cumulative">累计(元)</string>
+    <string name="my_all_order">查看全部订单</string>
+    <string name="my_wallet">钱包</string>
+    <string name="my_offer_list">报价记录</string>
+    <string name="my_integral">积分</string>
+    <string name="my_coupon">优惠券</string>
+    <string name="my_close_tuiguangfei">隐藏推广费</string>
+    <string name="my_authentication">实名认证</string>
+    <string name="my_new_user_help">新手指引</string>
+
+    <!--基本资料-->
+    <string name="user_info">基本资料</string>
+    <string name="user_info_head_icon">头像</string>
+    <string name="user_info_nick">昵称</string>
+    <string name="user_info_nick_title">编辑昵称</string>
+    <string name="user_info_nick_hint">请填写昵称</string>
+    <string name="user_info_sex">性别</string>
+    <string name="user_info_city">城市</string>
+    <string name="user_info_email">常用邮箱</string>
+    <string name="user_info_email_title">编辑常用邮箱</string>
+    <string name="user_info_email_hint">请填写邮箱</string>
+    <string name="user_info_email_tip">请填写正确的邮箱</string>
+    <string name="user_info_card">名片</string>
+    <string name="user_info_qr">我的二维码</string>
+    <string name="user_info_no_create">未生成</string>
+    <string name="user_info_uodate_suc">更新资料成功</string>
+
+    <!--名片-->
+    <string name="user_card">名片</string>
+    <string name="user_card_name">姓名</string>
+    <string name="user_card_mobile">电话</string>
+    <string name="user_card_wx">微信</string>
+    <string name="user_card_qq">QQ</string>
+    <string name="user_card_company">所属公司</string>
+    <string name="user_card_intro">个人简介</string>
+    <string name="user_card_share">分享名片</string>
+    <string name="edit">编辑</string>
+    <string name="save">分享保存名片</string>
+
+    <!--钱包-->
+    <string name="wallet_tuiguangfei">推广费(元)</string>
+    <string name="wallet_detail">收支明细</string>
+    <string name="wallet_detail_status1">入账成功</string>
+    <string name="wallet_detail_status2">提现成功</string>
+    <string name="wallet_withdrawal">当前可提现金额</string>
+    <string name="wallet_cumulative">累计收入(元)</string>
+    <string name="wallet_will_can">审核中金额(元)</string>
+    <string name="wallet_will_can_title">待审核金额明细</string>
+    <string name="wallet_accounts">提现账户</string>
+    <string name="wallet_help">收入结算规则说明</string>
+    <string name="wallet_get_rmb">提现</string>
+    <string name="wallet_will_can_title1">全部</string>
+    <string name="wallet_will_can_title2">审核中</string>
+    <string name="wallet_will_can_title3">通过</string>
+    <string name="wallet_will_can_title4">未通过</string>
+    <string name="wallet_detail_title1">全部</string>
+    <string name="wallet_detail_title2">推广费</string>
+    <string name="wallet_detail_title3">充值</string>
+    <string name="wallet_detail_title4">提现</string>
+    <string name="no_content">没有内容</string>
+    <string name="wallet_withdrawal_price">可提现金额</string>
+    <string name="wallet_withdrawal_hint">单笔提现最高2万</string>
+    <string name="wallet_withdrawal_help1">提现时间到账规则,</string>
+    <string name="wallet_withdrawal_bank_title">银行卡</string>
+    <string name="wallet_withdrawal_bank_tip">还没有添加银行卡</string>
+    <string name="wallet_withdrawal_bank_null_choose_tip">请先选择银行卡</string>
+    <string name="wallet_withdrawal_price_null_tip">请输入要提现金额</string>
+    <string name="wallet_withdrawal_price_low_tip">可提现金额不足</string>
+
+    <string name="wallet_withdrawal_withdrawal_price_title">提现金额</string>
+    <string name="wallet_withdrawal_withdrawal_bank_to_hint">可转出到卡</string>
+    <string name="wallet_withdrawal_withdrawal_bank_null_tip">请添加银行卡</string>
+    <string name="wallet_withdrawal_withdrawal_bank_weihao">尾号</string>
+    <string name="wallet_withdrawal_help2">点击查看</string>
+    <string name="wallet_withdrawal_now">立即提现</string>
+    <string name="wallet_withdrawal_tip1">您需要完成实名认证才可以使用提现功能</string>
+    <string name="wallet_withdrawal_tip2">首次提现您还需要设置您的提现密码</string>
+    <string name="user_auth_tip">请先完成实名认证</string>
+    <string name="wallet_withdrawal_go_auth">去认证</string>
+    <string name="wallet_withdrawal_go_sex">去设置</string>
+    <string name="wallet_accounts_title">选择提现账户</string>
+    <string name="wallet_withdrawal_price_tip">不能大于可提现金额</string>
+    <string name="wallet_withdrawal_price_tip1">请填写提现金额</string>
+    <string name="wallet_withdrawal_price_tip2">请选择提现账户</string>
+    <string name="wallet_accounts_wx_title">微信</string>
+    <string name="wallet_accounts_wx">微信钱包</string>
+    <string name="wallet_accounts_ali">支付宝</string>
+    <string name="wallet_accounts_select">提现到该账户</string>
+    <string name="wallet_accounts_change">修改提现账户</string>
+    <string name="wallet_set_withdrawal_pwd">设置提现密码</string>
+    <string name="wallet_input_withdrawal_pwd">输入提现密码</string>
+    <string name="wallet_withdrawal_pwd_null_tip">请输入提现密码</string>
+    <string name="wallet_withdrawal_pwd_set_suc_tip">设置成功</string>
+    <string name="wallet_withdrawal_pwd_change_suc_tip">修改成功</string>
+    <string name="wallet_withdrawal_pwd_reset_suc_tip">重置成功</string>
+    <string name="wallet_set_withdrawal_pwd_tip">请设置您的提现密码</string>
+    <string name="wallet_input_withdrawal_pwd_tip1">或者，您可以</string>
+    <string name="wallet_input_withdrawal_pwd_tip2">修改提现密码</string>
+    <string name="wallet_withdrawal_changepwd_pwd">修改提现密码</string>
+    <string name="wallet_withdrawal_changepwd_old_pwd_hint">请输入您的提现旧密码</string>
+    <string name="wallet_withdrawal_changepwd_new_pwd_hint">请设置您的新密码</string>
+    <string name="wallet_withdrawal_respwd">重置提现密码</string>
+    <string name="wallet_withdrawal_respwd_new_pwd_tip">请输入新密码</string>
+    <string name="wallet_withdrawal_respwd_new_pwd_hint">请输入新密码</string>
+    <string name="wallet_withdrawal_respwd_confirm_pwd_tip">请输入确认密码</string>
+    <string name="wallet_withdrawal_respwd_confirm_pwd_hint">请确认新密码</string>
+    <string name="wallet_withdrawal_respwd_confirm_pwd_not_same_tip">两次密码不一致</string>
+
+    <!--报价记录-->
+    <string name="user_offer_record">报价记录</string>
+    <string name="user_offer_record_top_title1">车险到期时间</string>
+    <string name="user_offer_record_top_title2">筛选</string>
+    <string name="user_offer_record_kehu_name_title">客户姓名:</string>
+    <string name="user_offer_record_time_title">报价时间:</string>
+    <string name="user_offer_record_look">查看报价</string>
+    <string name="user_offer_record_not_kehu_tip">他还不是你的客户</string>
+    <string name="user_offer_record_add_kehu">去添加</string>
+    <string name="kehu_status1">意向</string>
+    <string name="kehu_status2">潜在</string>
+    <string name="user_offer_record_shaixuan_left1">车险到期时间</string>
+    <string name="user_offer_record_shaixuan_left2">车险报价时间</string>
+    <string name="user_offer_record_shaixuan_right1">已投保车辆</string>
+    <string name="user_offer_record_shaixuan_right2">未投保车辆</string>
+
+    <!--我的优惠券-->
+    <string name="user_coupon">我的优惠券</string>
+    <string name="user_coupon_status1">未使用</string>
+    <string name="user_coupon_status2">已使用</string>
+    <string name="user_coupon_status3">已过期</string>
+    <string name="user_coupon_time_to">有效期至</string>
+    <string name="user_coupon_rule">使用规则:</string>
+    <string name="user_coupon_rule1">无限制使用</string>
+    <string name="user_coupon_rule2">购买车险可用,</string>
+
+    <!--我的积分-->
+    <string name="user_score">我的积分</string>
+    <string name="user_score_rule">积分规则</string>
+    <string name="user_score_go">去赚积分</string>
+    <string name="user_score_title">我的积分:</string>
+
+    <!--实名认证-->
+    <string name="user_auth">实名认证</string>
+    <string name="user_auth_name">姓名</string>
+    <string name="user_auth_name_hint">请填写您的真实姓名</string>
+    <string name="user_auth_idcard">身份证号</string>
+    <string name="user_auth_idcard_hint">请填写您的身份证号</string>
+    <string name="user_auth_idcard_photo">身份证照片</string>
+    <string name="user_auth_idcard_zhengmian">请上传身份证正面</string>
+    <string name="user_auth_idcard_beimian">请上传身份证背面</string>
+    <string name="user_auth_idcard_tip">温馨提示:</string>
+    <string name="user_auth_idcard_tip1">上传身份证照片满足无反光、无水印，文字清晰可见</string>
+    <string name="user_auth_idcard_tip2">通常我们会在信息上传后的1个工作日内完成审核</string>
+    <string name="user_auth_suc">认证成功!</string>
+    <string name="user_auth_suc_tip">恭喜您, 您已经认证成功!</string>
+    <string name="user_auth_failed">认证失败!</string>
+    <string name="user_authing">认证审核中!</string>
+    <string name="user_auth_failed_tip">审核未通过：请提供正确的身份证正、反面的影像件。</string>
+
+    <!--消息中心-->
+    <string name="user_notify">消息中心</string>
+    <string name="user_notify_title1">订单</string>
+    <string name="user_notify_title2">客户</string>
+    <string name="user_notify_title3">收支</string>
+    <string name="user_notify_title4">系统</string>
+    <string name="user_notify_detail">查看详情</string>
+    <!--====================================================我的end=============================================-->
+
+    <!-- 车险 -->
+    <string name="insurer_detail">保单详情</string>
+    <string name="insurer_success_insure">您办理的车险已成功投保\n请等候正式保单递送。</string>
+    <string name="insurer_electron">本保单仅作为电子回执，请以纸质正式保单为准!</string>
+    <string name="insurer_platfrom">投保平台:   我来保车险选购平台</string>
+    <string name="insurer_vehicle_message">《机动车综合商业保险免责事项说明书》</string>
+    <!-- 知识库 -->
+
+    <!-- 车辆 -->
+    <string name="car_add_digits">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-</string>
+    <string name="input_password">1234567890</string>
+
+    <!--行驶证识别-->
+    <string name="camera_open_error">打开相机失败</string>
+    <string name="photo_too_lage">图片太大!</string>
+
+    <!-- 设置 -->
+    <string name="setting">设置</string>
+    <string name="about_phone">400-001-6066</string>
+    <string name="fb_title">用户反馈</string>
+    <string name="version_checking">版本检测中</string>
+    <string name="version_newest">已是最新版本</string>
+    <string name="about_tex">北京众保互融信息技术有限公司版权所有</string>
+    <string name="about_midify_pwd">修改密码</string>
+    <string name="about_feedback">意见反馈</string>
+    <string name="about_aboutus">关于我们</string>
+    <string name="logout">退出登录</string>
+    <string name="test">敬请期待</string>
+    <string name="raw_pwd">原密码</string>
+    <string name="new_pwd">新密码</string>
+
+    <!-- 分享 -->
+    <string name="app_share_txt">我正在用"我来保"，比价精准、最优车险方案定制、还有创新性保障等全流程车险服务。你也来试试~</string>
+    <string name="app_downloadUrl">http://a.app.qq.com/o/simple.jsp?pkgname=com.wlb.agent</string>
+    <string name="share_alert_install_wx">请先安装微信客户端</string>
+    <string name="wx_pay_notsupppot">您的微信版本不支持微信支付</string>
+
+    <!-- 微信支付 -->
+    <string name="wx_appId">wx3f26e78c02b73132</string>
+
+
+    <!-- 车险预约 -->
+
+    <!-- 我的任务 -->
+    <string name="task_sign">每日签到</string>
+    <string name="task_query_price">今日第一次查价</string>
+    <string name="task_wx_send">今日第一次邀请好友</string>
+    <string name="task_verify">实名认证</string>
+    <string name="task_profession">职业认证</string>
+    <string name="task_education">教育认证</string>
+    <string name="task_qualification">资格认证</string>
+    <string name="task_wx_bind">微信绑定</string>
+    <string name="task_qq_bind">QQ绑定</string>
+    <string name="task_personage">个人信息</string>
+    <string name="task_feedback">提意见</string>
+</resources>

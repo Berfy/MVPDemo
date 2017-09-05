@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">#00000000</color>
+    <color name="transparent_black">#30000000</color>
+
+    <drawable name="transparent">#00000000</drawable>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#c3c4c6</color>
+    <color name="green">#009447</color>
+    <color name="grays">#8d8d8d</color>
+    <color name="titlebar_line">#e2e2e2</color>
+
+    <!-- 白色透明度 -->
+    <color name="white_a10">#19ffffff</color>
+    <color name="white_a15">#26ffffff</color>
+    <color name="white_a20">#33ffffff</color>
+    <color name="white_a30">#4cffffff</color>
+    <color name="white_a40">#66ffffff</color>
+    <color name="white_a50">#7fffffff</color>
+    <color name="white_a60">#99ffffff</color>
+    <color name="white_a80">#CCffffff</color>
+    <color name="white_a90">#E6ffffff</color>
+    <color name="white_a95">#F3ffffff</color>
+
+    <!-- 黑色透明度 -->
+    <color name="black_a04">#A0000000</color>
+    <color name="black_a10">#19000000</color>
+    <color name="black_a15">#26000000</color>
+    <color name="black_a20">#33000000</color>
+    <color name="black_a30">#4c000000</color>
+    <color name="black_a40">#66000000</color>
+    <color name="black_a60">#99000000</color>
+    <color name="black_a70">#B2000000</color>
+    <color name="black_a75">#bf000000</color>
+    <color name="black_a80">#CC000000</color>
+    <color name="black_a90">#E6000000</color>
+
+    <!-- LoadingBar -->
+    <color name="loadingbar_progress_startcolor">#ffffff</color>
+    <color name="loadingbar_progress_centercolor">#999999</color>
+    <color name="loadingbar_progress_endcolor">#666666</color>
+    <color name="loadingbar_textcolor">#69727b</color>
+
+</resources>

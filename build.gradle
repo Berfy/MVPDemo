@@ -1,0 +1,31 @@
+apply from: 'buildsystem/dependencies.gradle'
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.+'
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.+'
+        classpath "com.fernandocejas.frodo:frodo-plugin:0.8.3"
+        classpath 'me.tatarka:gradle-retrolambda:3.2.5'
+        //bugtag plugin
+        classpath 'com.bugtags.library:bugtags-gradle:latest.integration'
+    }
+}
+
+allprojects {
+    ext {
+        //################################# APP版本 #################################
+        applicationId = 'com.wlb.agent'
+        versionCode = 30200
+        versionName = "3.0.2"
+        testInstrumentationRunner = "android.support.test.runner.AndroidJUnitRunner"
+        testApplicationId = 'com.wlb.agent.test'
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+

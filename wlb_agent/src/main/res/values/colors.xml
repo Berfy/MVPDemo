@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="common_load">#fff100</color>
+    <color name="translate">#00000000</color>
+    <color name="translate_black">#50000000</color>
+    <color name="translate_white">#50ffffff</color>
+    <color name="common_text">#0c0c0c</color>
+    <color name="common_text1">#505050</color>
+    <color name="common_red">#f13b37</color>
+    <color name="common_line">#8b8b8b</color>
+    <color name="common_line1">#f6f6f6</color>
+    <color name="common_blue">#3b8ddf</color>
+    <color name="common_green">#00ceba</color>
+    <color name="titlebar_righttxt">#9fa0a0</color>
+    <color name="common_text_gray">#888888</color>
+    <color name="home_notice_bg">#fffbde</color>
+    <color name="common_bg">#f6f6f6</color>
+
+    <!--确认车辆信息-->
+    <color name="offer_confirm_car_info_top">#fffbdf</color>
+    <color name="offer_confirm_car_info_top_text">#605543</color>
+    <color name="offer_confirm_car_info_line">#ee3d3d</color>
+    <color name="offer_confirm_car_info_gray_text">#646464</color>
+    <color name="offer_confirm_car_info_ocr_bg">#e3f3ff</color>
+    <color name="offer_confirm_car_info_hotline">#4090d8</color>
+
+    <!--报价-->
+    <color name="color_6d5543">#6d5543</color>
+    <!--报价分享-->
+    <color name="offer_share_top_text">#505543</color>
+
+    <!--订单-->
+    <color name="order_submit_red">#ffe9eb</color>
+    <color name="order_status0">#5a5a5a</color>
+    <color name="order_send_code_tip">#7f7f7f</color>
+
+    <!--支付-->
+    <color name="pay_choose">#838383</color>
+
+    <color name="red">#E1423C</color>
+    <color name="blue_color">#e73322</color>
+    <color name="addcar_txt_left">#000000</color>
+    <color name="addcar_input_color">#62667b</color>
+
+    <!-- insurance -->
+    <color name="insurance_catgory_color">#4a4a4a</color>
+    <color name="insuranceservice_divider_line">#cfd0d4</color>
+
+    <!-- compare_price_pk -->
+    <color name="compare_price_pk_text">#797979</color>
+
+    <!-- insurance_pay_fail -->
+    <color name="pay_fail_info">#62667b</color>
+
+    <!-- innovation -->
+
+    <!-- city add -->
+    <!-- fb -->
+    <color name="fb_subject_color">#b4b4b4</color>
+
+    <!-- ripple -->
+
+    <!-- address -->
+
+    <!-- car -->
+    <color name="c_7a7a7a">#7a7a7a</color>
+
+    <!-- LoadingBar -->
+    <color name="loadingbar_progress_startcolor">#e73322</color>
+    <color name="loadingbar_progress_centercolor">#ef7064</color>
+    <color name="loadingbar_progress_endcolor">#f39991</color>
+
+    <!-- insurance_order_status-->
+    <color name="c_f39801">#f39801</color>
+    <color name="c_277fd7">#277fd7</color>
+    <color name="c_b81c22">#b81c22</color>
+    <color name="c_393939">#393939</color>
+    <color name="c_9fa0a0">#9fa0a0</color>
+    <color name="c_cb5959">#cb5959</color>
+    <color name="c_525252">#525252</color>
+    <color name="c_606060">#606060</color>
+    <color name="c_666464">#666464</color>
+    <color name="c_727171">#727171</color>
+    <color name="c_50b879">#50b879</color>
+
+
+    <color name="c_e5e4e2">#e5e4e2</color>
+
+    <!-- common other -->
+    <color name="c_696969">#696969</color>
+    <color name="c_c3c7d9">#c3c7d9</color>
+    <color name="c_eff3f6">#eff3f6</color>
+    <color name="c_e73322">#e73322</color>
+    <color name="c_ee3d3d">#ee3d3d</color>
+    <color name="c_777d88">#777d88</color>
+    <color name="c_e73322_a70">#B2e73322</color>
+    <color name="c_00a0ea">#00a0ea</color>
+
+    <drawable name="d_eff3f6">#eff3f6</drawable>
+    <color name="c_9b9b9b">#9b9b9b</color>
+    <color name="c_4a4a4a">#4a4a4a</color>
+    <color name="c_a2a2a2">#a2a2a2</color>
+    <color name="c_e9e9e9">#e9e9e9</color>
+    <color name="c_EE2112">#EE2112</color>
+    <color name="c_dbdfe2">#dbdfe2</color>
+    <color name="c_8d96a5">#8d96a5</color>
+    <color name="c_9ca3b3">#9ca3b3</color>
+    <color name="c_d6d7d9">#d6d7d9</color>
+    <color name="c_ffac66">#ffac66</color>
+    <color name="c_9d9d9d">#9d9d9d</color>
+    <color name="c_b8bcc5">#b8bcc5</color>
+    <color name="c_1c1c1c">#1c1c1c</color>
+    <color name="c_aaaaaa">#aaaaaa</color>
+    <color name="c_87cb68">#87cb68</color>
+    <color name="c_bebebe">#bebebe</color>
+    <color name="c_e44433">#e44433</color>
+    <color name="c_ee968f">#ee968f</color>
+    <color name="c_b2b2b2">#b2b2b2</color>
+    <color name="c_fc584b">#fc584b</color>
+    <color name="c_abafb2">#abafb2</color>
+    <color name="c_959595">#959595</color>
+    <color name="c_e7e7e7">#e7e7e7</color>
+    <color name="c_9d9c9c">#9d9c9c</color>
+    <color name="c_E5E5E5">#E5E5E5</color>
+</resources>

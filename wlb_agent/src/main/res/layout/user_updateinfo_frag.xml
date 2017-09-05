@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/c_e7e7e7" />
+
+    <RelativeLayout
+        android:id="@+id/address_tex"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/nickName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:textColor="@color/c_393939"
+            android:textSize="@dimen/sp_13" />
+
+        <EditText
+            android:id="@+id/add_address"
+            android:layout_toRightOf="@id/nickName"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/c_9fa0a0"
+            android:textSize="@dimen/sp_11" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/common_line1" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/phone_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/c_dbdfe2" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50">
+
+            <TextView
+                android:id="@+id/phone_tex"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="新手机号码"
+                android:textSize="@dimen/sp_13" />
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/phone_tex"
+                android:background="@null"
+                android:hint="请输入要修改手机号"
+                android:singleLine="true"
+                android:textColorHint="@color/c_a2a2a2"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:maxLines="1"
+                android:textSize="@dimen/sp_11" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/c_dbdfe2" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50">
+
+            <TextView
+                android:id="@+id/code"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:text="验证码"
+                android:textSize="@dimen/sp_13" />
+
+            <Button
+                android:id="@+id/button_code"
+                android:layout_width="99dp"
+                android:layout_height="33dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shape_fb_btn_bg"
+                android:text="获取验证码"
+                android:textColor="@color/c_b81c22"
+                android:textSize="@dimen/sp_11" />
+
+            <EditText
+                android:id="@+id/code_tex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/button_code"
+                android:background="@null"
+                android:focusable="true"
+                android:maxLines="1"
+                android:inputType="number"
+                android:layout_toRightOf="@id/code"
+                android:focusableInTouchMode="true"
+                android:hint="请输入验证码"
+                android:textColorHint="@color/c_a2a2a2"
+                android:textSize="@dimen/sp_11" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/c_dbdfe2" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50">
+
+            <TextView
+                android:id="@+id/user_password"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="密码"
+                android:textSize="@dimen/sp_13" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/user_password"
+                android:background="@null"
+                android:hint="请输入密码"
+                android:maxLines="1"
+                android:inputType="textPassword"
+                android:digits="@string/car_add_digits"
+                android:textColorHint="@color/c_a2a2a2"
+                android:textSize="@dimen/sp_11" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/c_dbdfe2" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="170dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textSize="@dimen/sp_14"
+        android:background="@drawable/shape_fb_btn_bg"
+        android:text="保存"
+        android:textColor="@color/c_b81c22" />
+
+</LinearLayout>

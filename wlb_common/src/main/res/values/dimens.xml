@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- titlebar -->
+    <dimen name="titlebar_height">50dp</dimen>
+    <dimen name="titlebar_txtsize">17sp</dimen>
+
+    <!-- sharebar -->
+    <dimen name="sharebar_platform_txtSize">11sp</dimen>
+
+</resources>

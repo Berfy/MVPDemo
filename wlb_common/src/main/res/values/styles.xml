@@ -1,0 +1,41 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 透明背景 -->
+    <style name="Dialog_tran" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+    <!-- 不透明背景 -->
+    <style name="Dialog_untran" parent="Dialog_tran">
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- 不透明背景 -->
+    <style name="Dialog_untran_d80" parent="Dialog_tran">
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.8</item>
+    </style>
+
+    <style name="Dialog_loading" parent="Dialog_tran">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!-- 弹窗渐隐动画 -->
+    <style name="Dialog.Anim.Fade" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/anim_fade_out</item>
+        <item name="@android:windowExitAnimation">@anim/anim_fade_in</item>
+    </style>
+
+    <style name="transparent_style">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/black_a60</item>
+        <item name="android:windowIsTranslucent">true</item>
+        　　
+    </style>
+</resources>

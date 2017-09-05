@@ -1,0 +1,37 @@
+apply plugin: 'com.android.library'
+
+def config = rootProject.ext
+android {
+    compileSdkVersion config.compileSdkVersion
+    buildToolsVersion config.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion config.minSdkVersion
+        targetSdkVersion config.targetSdkVersion
+        versionCode config.versionCode
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':librarys:AppUpdate')
+    compile project(':librarys:CommonUtil')
+    compile project(':librarys:CommonWidget')
+    compile project(':librarys:Pushlib')
+    compile project(':librarys:zxinglibrary')
+
+    compile config.libSupportAppcompat
+    compile config.libSupportDesign
+    compile config.libSupportV4
+//    compile config.imageLoader
+    compile config.eventBus
+    compile config.umengAnalytics
+    compile config.rxAndroid
+    compile config.butterKnife
+
+    //bugtag
+    compile('com.bugtags.library:bugtags-lib:latest.integration') {
+        exclude group: 'com.android.support', module: 'support-v4'
+    }
+
+}

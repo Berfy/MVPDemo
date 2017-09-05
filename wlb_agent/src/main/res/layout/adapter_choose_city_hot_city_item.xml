@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_10"
+        android:text="@string/home_city_search_title_gps"
+        android:textColor="@color/common_text_gray"
+        android:textSize="@dimen/sp_16" />
+
+    <TextView
+        android:id="@+id/tv_gps_city"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:background="@color/white"
+        android:gravity="center|left"
+        android:paddingLeft="@dimen/dp_10"
+        android:text="北京市"
+        android:textColor="@color/common_text"
+        android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_10"
+        android:text="@string/home_city_search_title_hot_city"
+        android:textColor="@color/common_text_gray"
+        android:textSize="@dimen/sp_16" />
+
+    <common.widget.gridview.ScrollGridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:cacheColorHint="#00000000"
+        android:horizontalSpacing="@dimen/dp_5"
+        android:padding="@dimen/dp_10"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/dp_5"></common.widget.gridview.ScrollGridView>
+
+</LinearLayout>

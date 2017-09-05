@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:background="@color/c_e7e7e7">
+
+        <EditText
+            android:id="@+id/seek_content"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/insurance_seek"
+            android:drawableLeft="@drawable/seek"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:hint="请输入车牌、车主名称进行搜索"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="23dp"
+            android:singleLine="true"
+            android:textSize="@dimen/sp_13" />
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/carlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

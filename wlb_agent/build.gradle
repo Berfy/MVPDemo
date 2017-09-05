@@ -1,0 +1,223 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'android-apt'
+apply plugin: 'me.tatarka.retrolambda'
+apply plugin: 'com.neenbedankt.android-apt'
+apply plugin: 'com.fernandocejas.frodo'
+
+frodo {
+    enabled = true
+}
+def config = rootProject.ext
+// 打包时间
+def releaseTime() {
+    return new Date().format("yyyyMMdd", TimeZone.getTimeZone("GMT+08:00"))
+}
+
+android {
+    useLibrary 'org.apache.http.legacy'
+
+    compileSdkVersion config.compileSdkVersion
+    buildToolsVersion config.buildToolsVersion
+
+    defaultConfig {
+        applicationId config.applicationId
+        minSdkVersion config.minSdkVersion
+        targetSdkVersion config.targetSdkVersion
+        versionCode config.versionCode
+        versionName config.versionName
+        testInstrumentationRunner config.testInstrumentationRunner
+        testApplicationId config.testApplicationId
+
+        manifestPlaceholders = [UMENG_CHANNEL_VALUE: "official"] // 默认渠道
+
+//        ndk {
+//            // 设置支持的 SO 库构架
+//            abiFilters 'armeabi','x86'//, 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64', 'mips', 'mips64'
+//        }
+
+        multiDexEnabled true
+    }
+    //----------------------Java版本----------------------
+    compileOptions {
+        sourceCompatibility config.javaVersion
+        targetCompatibility config.javaVersion
+    }
+
+    //----------------------不打包进版本的文件---------------------
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+        exclude 'LICENSE.txt'
+    }
+
+    //----------------------lint检查----------------------
+    lintOptions {
+        quiet true
+        abortOnError false
+        ignoreWarnings true
+        disable 'InvalidPackage'            //Some libraries have issues with this.
+        disable 'OldTargetApi'
+        //Lint gives this warning but SDK 20 would be Android L Beta.
+        disable 'IconDensities'             //For testing purpose. This is safe to remove.
+        disable 'IconMissingDensityFolder'  //For testing purpose. This is safe to remove.
+    }
+
+    productFlavors {
+        offical {}
+//        xiaomi {}
+//        w360 {}
+//        baidu {}
+//        wandoujia {}
+//        yingyongbao {}
+//        anzhi {}
+//        yingyonghui {}
+//        lianxiang {}
+//        huawei {}
+    }
+
+    productFlavors.all {
+        flavor -> flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+    }
+
+    //----------------------签名配置----------------------
+    signingConfigs {
+        debug {
+            //为了方便测试分享或第三方登录  使用正式签名
+            storeFile file('../buildsystem/wlb_agent_key.jks')
+            storePassword 'wolaibao'
+            keyAlias 'wlb_agent_key'
+            keyPassword 'wolaibao'
+        }
+        release {
+            storeFile file('../buildsystem/wlb_agent_key.jks')
+            storePassword 'wolaibao'
+            keyAlias 'wlb_agent_key'
+            keyPassword 'wolaibao'
+        }
+    }
+
+    buildTypes {
+        debug {
+            versionNameSuffix "-debug" //versionName加上debug
+            minifyEnabled false
+            shrinkResources false
+            manifestPlaceholders = [APP_NAME: "@string/app_name_test"]
+            signingConfig signingConfigs.debug
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            zipAlignEnabled true
+            shrinkResources true
+            manifestPlaceholders = [APP_NAME: "@string/app_name"]
+            signingConfig signingConfigs.release
+        }
+    }
+
+//    productFlavors {
+//        dev {
+//            /**
+//             * 开发版
+//             * 将最低 SDK 版本设置为 21。在此设置下，使用 ART 支持的格式时可大幅加快 Dalvik 可执行文件分包的生成速度。
+//             */
+//            minSdkVersion 21
+//        }
+//        prod {
+//            /**
+//             *  prodDebug：内测版,供其他人测试
+//             *  prodRelease：发布版(正式发版时请选择prodRelease打包)
+//             */
+//            minSdkVersion config.minSdkVersion
+//        }
+//    }
+
+// apk输出重命名
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+
+            // oldName
+            def outputFile = output.outputFile
+
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+
+                // 获取中英文版本
+                def newName = ''
+                def version = "v${defaultConfig.versionName}"
+                def time = "${releaseTime()}"
+
+                // release版本
+                if (variant.buildType.name.equals('release')) {
+                    // 获取渠道号
+                    def productFlavor = variant.productFlavors[0].name
+                    if (productFlavor.equals("offical")) {
+                        productFlavor = "official";
+                    }
+                    newName = 'wolaibao_' + productFlavor + "_sign.apk"
+                } else {
+                    newName = 'Wlb_' + version + '_debug_' + time + ".apk"
+                }
+                output.outputFile = new File(outputFile.parent, newName)
+            }
+        }
+    }
+
+    dexOptions {
+        preDexLibraries = false
+        javaMaxHeapSize "3g"
+        incremental true
+    }
+
+}
+
+//------bugtag start-------
+apply plugin: 'com.bugtags.library.plugin'
+bugtags {
+    appKey "31477d09ddaf6afe4499a4699bdb33ac"
+    appSecret "8be25647207060a0eae1e0d8d20eb1d5"
+    mappingUploadEnabled true
+    trackingNetworkEnabled true
+}
+//------bugtag end------
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':wlb_common')
+    // 解决:data模块BuildDebug.DEBUG总是为false的问题
+    releaseCompile project(path: ':data', configuration: 'release')
+    debugCompile project(path: ':data', configuration: 'debug')
+    compile 'com.android.support:multidex:1.0.1'
+
+    compile config.libPercent
+    compile config.butterKnife
+    apt config.butterKnifeCompiler
+    compile config.rxJava
+    compile config.rxAndroid
+    compile config.rxPermissions
+    provided config.javaxAnnotation
+
+    androidTestCompile config.mockito
+    androidTestCompile config.dexmaker
+    androidTestCompile config.dexmakerMockito
+    androidTestCompile(config.espresso, {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    androidTestCompile config.testingSupportLib
+
+//    debugCompile config.debugDependencies.leakCanary
+//    releaseCompile config.releaseDependencies.leakCanary
+//    testCompile config.releaseDependencies.leakCanary
+
+    //bugtag
+    compile('com.bugtags.library:bugtags-lib:latest.integration') {
+        exclude group: 'com.android.support', module: 'support-v4'
+    }
+
+}

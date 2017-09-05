@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="15dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/item_licenceNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:textColor="@color/c_393939"
+        android:textSize="@dimen/sp_13"
+        tools:text="川12345" />
+
+    <TextView
+        android:id="@+id/item_owner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/item_licenceNo"
+        android:layout_marginLeft="20dp"
+        android:layout_alignBottom="@id/item_licenceNo"
+        android:textColor="@color/c_393939"
+        android:textSize="@dimen/sp_13"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:maxWidth="80dp"
+        tools:text="张三三三三三三三三" />
+
+
+    <TextView
+        android:id="@+id/item_carModel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/item_licenceNo"
+        android:layout_below="@id/item_licenceNo"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="8dp"
+        android:paddingBottom="6dp"
+        android:textColor="@color/c_727171"
+        android:textSize="@dimen/sp_12"
+        tools:text="福特蒙迪欧" />
+
+
+    <TextView
+        android:id="@+id/item_showText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="6dp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/c_393939"
+        android:lineSpacingExtra="3dp"
+        android:textSize="@dimen/sp_13"
+        tools:text="交强险1天\n后到期" />
+
+    <ImageView
+        android:id="@+id/item_phoneCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:src="@drawable/car_phone"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>

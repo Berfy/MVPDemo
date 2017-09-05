@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?><!--待审核金额-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/layout_status1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="@string/wallet_detail_title1"
+                android:textColor="@color/common_text"
+                android:textSize="@dimen/sp_15" />
+
+            <View
+                android:id="@+id/v_line1"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_3"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/bg_shape_red" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/dp_1"
+            android:layout_height="@dimen/dp_10"
+            android:background="@color/common_line1" />
+
+        <LinearLayout
+            android:id="@+id/layout_status2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="@string/wallet_detail_title2"
+                android:textColor="@color/common_text"
+                android:textSize="@dimen/sp_15" />
+
+            <View
+                android:id="@+id/v_line2"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_3"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/bg_shape_red" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/dp_1"
+            android:layout_height="@dimen/dp_10"
+            android:background="@color/common_line1" />
+
+        <LinearLayout
+            android:id="@+id/layout_status3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="@string/wallet_detail_title4"
+                android:textColor="@color/common_text"
+                android:textSize="@dimen/sp_15" />
+
+            <View
+                android:id="@+id/v_line3"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_3"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/bg_shape_red" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_10"></android.support.v4.view.ViewPager>
+
+
+</LinearLayout>

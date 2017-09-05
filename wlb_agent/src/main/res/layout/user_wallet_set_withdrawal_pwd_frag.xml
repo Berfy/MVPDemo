@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_30"
+            android:text="@string/wallet_set_withdrawal_pwd_tip"
+            android:textColor="@color/common_text"
+            android:textSize="@dimen/sp_16" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_20"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layout_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_pwd1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2.5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_shape_line_gray"
+                    android:digits="0123456789"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textColor="@color/common_text"
+                    android:textSize="@dimen/sp_30" />
+
+                <TextView
+                    android:id="@+id/tv_pwd2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2.5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_shape_line_gray"
+                    android:digits="0123456789"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textColor="@color/common_text"
+                    android:textSize="@dimen/sp_30" />
+
+                <TextView
+                    android:id="@+id/tv_pwd3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2.5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_shape_line_gray"
+                    android:digits="0123456789"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textColor="@color/common_text"
+                    android:textSize="@dimen/sp_30" />
+
+                <TextView
+                    android:id="@+id/tv_pwd4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2.5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_shape_line_gray"
+                    android:digits="0123456789"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textColor="@color/common_text"
+                    android:textSize="@dimen/sp_30" />
+
+                <TextView
+                    android:id="@+id/tv_pwd5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2.5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_shape_line_gray"
+                    android:digits="0123456789"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textColor="@color/common_text"
+                    android:textSize="@dimen/sp_30" />
+
+                <TextView
+                    android:id="@+id/tv_pwd6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2.5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_shape_line_gray"
+                    android:digits="0123456789"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textColor="@color/common_text"
+                    android:textSize="@dimen/sp_30" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.wlb.agent.ui.common.view.Pwd6KeyBorad
+        android:layout_width="match_parent"
+        android:id="@+id/pwd6KeyBoard"
+        android:layout_alignParentBottom="true"
+        android:layout_height="match_parent"></com.wlb.agent.ui.common.view.Pwd6KeyBorad>
+</RelativeLayout>

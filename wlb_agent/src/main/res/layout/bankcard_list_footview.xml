@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/add_bankCard"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/c_e7e7e7"
+        android:text="添加银行卡"
+        android:gravity="center_vertical"
+        android:drawableLeft="@drawable/add_bankcard"
+        android:drawablePadding="8dp"
+        android:paddingLeft="15dp"
+        android:textSize="@dimen/sp_13"
+        android:textColor="#727171" />
+</RelativeLayout>

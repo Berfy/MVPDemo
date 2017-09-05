@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/card_container"
+    android:background="@drawable/card_bg">
+
+    <LinearLayout
+        android:id="@+id/share_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/card_background"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <common.widget.imageview.CircleImageView
+                android:id="@+id/card_head"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/sliding_head" />
+
+            <LinearLayout
+                android:id="@+id/linear_lauout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_toRightOf="@id/card_head"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/card_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/c_393939"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/v_flag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:src="@drawable/user_attestation"/>
+                <TextView
+                    android:id="@+id/card_grade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:textSize="9sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:background="@drawable/shape_f39900"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/card_profession"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linear_lauout"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@id/card_head"
+                android:textColor="@color/c_393939"
+                android:maxLength="12"
+                android:maxLines="1"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/cardTeamNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/c_393939"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/cardClientNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/c_393939"
+                android:textSize="13sp" />
+            <TextView
+                android:id="@+id/cardSalesNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/c_393939"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:id="@+id/card_qualification_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/c_393939"
+                android:layout_marginBottom="8dp"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/card_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card_qualification_name"
+                android:textColor="@color/c_393939"
+                android:layout_marginBottom="8dp"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/card_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card_phone"
+                android:textColor="@color/c_393939"
+                android:textSize="13sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignRight="@id/share_layout"
+        android:layout_alignBottom="@id/share_layout"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/push" />
+
+    <ImageView
+        android:id="@+id/card_qrcode"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/share_layout"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        />
+    <Button
+        android:id="@+id/card_edit"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/share_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/shape_mycard_edit"
+        android:text="编  辑"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_14" />
+</RelativeLayout>

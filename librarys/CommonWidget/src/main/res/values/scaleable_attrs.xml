@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="scaleable">
+        <!-- 点击缩放比例 -->
+        <attr name="scaleRatio" format="float"/>
+    </declare-styleable>
+
+</resources>

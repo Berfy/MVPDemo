@@ -1,0 +1,5 @@
+<resources>
+
+    <string name="share_alert_install_wx">请先安装微信客户端</string>
+    <string name="wx_pay_notsupppot">您的微信版本不支持微信支付</string>
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_touch"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/translate_black"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_anim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="选择"
+            android:textColor="@color/common_text"
+            android:textSize="@dimen/sp_16"
+            android:visibility="visible" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/common_line1" />
+
+        <common.widget.listview.ScrollListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:horizontalSpacing="@dimen/dp_5"
+            android:scrollbars="none"
+            android:verticalSpacing="@dimen/dp_5"></common.widget.listview.ScrollListView>
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45"
+            android:text="@string/cancel"
+            android:background="@color/common_bg"
+            android:textColor="@color/common_text"
+            android:textSize="@dimen/sp_16"
+            android:visibility="visible" />
+    </LinearLayout>
+</LinearLayout>

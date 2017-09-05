@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/share_floatingbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="32dip"
+    android:paddingTop="16dp">
+
+    <TextView
+        android:id="@+id/share_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="分享到"
+        android:textColor="#4a4f53"
+        android:textSize="17sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/sharebar_line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="32dip"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/share_weixin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/share_wx"
+            android:gravity="center_horizontal"
+            android:text="@string/share_platform_wx"
+            android:textColor="@color/sharebar_platform_txtcolor"
+            android:textSize="@dimen/sharebar_platform_txtSize" />
+
+        <TextView
+            android:id="@+id/share_weixin_friend"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/share_wx_friend"
+            android:gravity="center_horizontal"
+            android:text="@string/share_platform_wx_friends"
+            android:textColor="@color/sharebar_platform_txtcolor"
+            android:textSize="@dimen/sharebar_platform_txtSize" />
+
+        <TextView
+            android:id="@+id/share_qqspace"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/share_zone"
+            android:gravity="center_horizontal"
+            android:text="@string/share_platform_qzone"
+            android:textColor="@color/sharebar_platform_txtcolor"
+            android:textSize="@dimen/sharebar_platform_txtSize"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/share_qq"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/share_friead"
+            android:gravity="center_horizontal"
+            android:text="@string/share_platform_qq"
+            android:textColor="@color/sharebar_platform_txtcolor"
+            android:textSize="@dimen/sharebar_platform_txtSize" />
+
+        <TextView
+            android:id="@+id/share_sina"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/share_weibo"
+            android:gravity="center_horizontal"
+            android:text="@string/share_platform_sina"
+            android:textColor="@color/sharebar_platform_txtcolor"
+            android:textSize="@dimen/sharebar_platform_txtSize" />
+    </LinearLayout>
+</LinearLayout>

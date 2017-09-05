@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wheelview_dialog_li"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/translate_black"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/wv_ll_main"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:clickable="true">
+
+            <Button
+                android:id="@+id/wv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:padding="@dimen/dp_10"
+                android:text="取消"
+                android:textColor="@color/common_text"
+                android:textSize="@dimen/sp_16" />
+
+            <Button
+                android:id="@+id/wv_sure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:padding="@dimen/dp_10"
+                android:text="确定"
+                android:textColor="@color/common_text"
+                android:textSize="@dimen/sp_16" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/wv_linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <com.wlb.agent.ui.common.date.WheelView
+                android:id="@+id/wheelview"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <com.wlb.agent.ui.common.date.WheelView
+                android:id="@+id/wheelview1"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <com.wlb.agent.ui.common.date.WheelView
+                android:id="@+id/wheelview2"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <com.wlb.agent.ui.common.date.WheelView
+                android:id="@+id/wheelview3"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <com.wlb.agent.ui.common.date.WheelView
+                android:id="@+id/wheelview4"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:layout_weight="1"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="app_name">common_widget</string>
+    <string name="img_desc">img</string>
+
+    <!-- LoadingBar -->
+    <string name="loadingbar_start">加载中...</string>
+    <string name="loadingbar_success">加载成功</string>
+    <string name="loadingbar_noconnection">无网络连接</string>
+    <string name="loadingbar_reload">加载失败 点击重新加载</string>
+    <string name="loadingbar_empty">暂无数据</string>
+
+</resources>
